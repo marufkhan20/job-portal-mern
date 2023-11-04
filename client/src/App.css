@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .container {
+  width: 70%;
+  margin: auto;
+} */
+
+.section-title {
+  text-align: center;
+}
+.section-title h5 {
+  margin: 0;
+  color: #0554f2 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.section-title h2 {
+  margin: 0;
+  font-size: 36px;
+  color: #0e2258;
+  margin-top: 15px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: #0554f2;
+  bottom: 0;
+  left: 48%;
+  transform: translate(-50%);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  background-color: #0554f2;
+  bottom: 0;
+  right: 44%;
+  transform: translate(-50%);
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  right: 20px;
+  bottom: -20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* banner area end */
+
+/* experience area start */
+
+.line {
+  height: 600px;
+  background-color: #ebf2fe;
+  border-radius: 20px;
+  position: relative;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0554f2;
+  height: 30%;
+  border-radius: 20px;
+}
+
+/* experience area end */
+
+/* project area start */
+
+.projects-area .single-project {
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+}
+.projects-area .single-project img {
+  width: 100%;
+  transition: 1s;
+  height: 100%;
+}
+
+.projects-area .single-project .project-details {
+  position: absolute;
+  bottom: 0px;
+  left: -100%;
+  right: 0;
+  top: 0;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  transition: 1s;
+}
+.projects-area .single-project .project-details h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: block;
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+.projects-area .single-project .project-details h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.projects-area .single-project:hover .project-details {
+  left: 0;
+  background-color: rgba(7, 44, 119, 0.8);
+}
+.projects-area .single-project:hover img {
+  transform: scale(1.2);
+}
+.projects-area .single-project .see-project {
+  position: absolute;
+  top: 28px;
+  right: -100%;
+  height: 60px;
+  width: 60px;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 84, 242, 1) 35%,
+    rgba(144, 0, 254, 1) 100%
+  );
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.projects-area .single-project:hover .see-project {
+  right: 28px;
+}
+
+/* projects area end */
+
+/* reviews area start */
+
+.reviews-area .single-review hr {
+  width: 60%;
+  border: 0;
+  height: 1px;
+  margin: auto;
+  background: #ddd;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  position: relative;
+  overflow: visible;
+}
+.reviews-area .single-review hr::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  transform: translate(-50%) rotate(45deg);
+  border-left: none;
+  border-top: none;
+  background: #f1f5f9;
+}
+
+/* reviews area end */
+
+/* contact area start */
+.contact-area {
+  padding: 120px 0;
+  position: relative;
+}
+.contact-area .contact-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.contact-area .contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.contact-area .contact-wrapper .contact-form {
+  width: 60%;
+}
+.contact-area .contact-wrapper .contact-details {
+  width: 40%;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgb(44 130 237 / 40%);
+}
+
+.contact-area .contact-title h4 {
+  margin: 0;
+  color: #0554f2 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.contact-area .contact-title h2 {
+  margin: 0;
+  font-size: 36px;
+  color: #0e2258;
+  margin-top: 15px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.contact-area .contact-wrapper input,
+.contact-area .contact-wrapper textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: inherit;
+  border: 1px solid #e7e7e7;
+  padding: 15px 25px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+.contact-area .contact-wrapper .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contact-area input[type="submit"] {
+  background-color: #0554f2;
+  margin: 0;
+  padding: 20px 45px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  display: inline-block;
+  width: auto;
+}
+.contact-area input[type="submit"]:hover {
+  background-color: #fff;
+  color: #0e2b3d;
+  border: 1px solid #e6e6e6;
+}
+.contact-area .contact-details .single-contact {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+.contact-area .contact-details .single-contact:last-child {
+  margin-bottom: 0;
+}
+.contact-area .contact-details .single-contact img {
+  width: 40px;
+  height: 50px;
+}
+.contact-area .contact-details .single-contact h4 {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.contact-area .contact-details .single-contact span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* contact area end */
+
+.img-white {
+  filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg)
+    brightness(119%) contrast(115%);
+}
